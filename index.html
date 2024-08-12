@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Travel Website</h2>
+            <p>Discover amazing destinations and plan your next adventure with us!</p>
+        </section>
+
+        <center><img src="travel1.jpg" alt="travel"></center>
+
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card" data-location="Paris, France" data-info="Known for its cafe culture and famous landmarks like the Eiffel Tower.">
+                    <img src="paris.jpg" alt="Paris">
+                    <h3>Paris, France</h3>
+                </div>
+                <div class="destination-card" data-location="Kyoto, Japan" data-info="Famous for its classical Buddhist temples, as well as gardens, imperial palaces, and traditional wooden houses.">
+                    <img src="japan.jpg" alt="Kyoto">
+                    <h3>Kyoto, Japan</h3>
+                </div>
+                <div class="destination-card" data-location="New York, USA" data-info="Known for its vibrant arts scene, world-class dining, and iconic sights like Times Square and Central Park.">
+                    <img src="newyork.jpg" alt="New York">
+                    <h3>New York, USA</h3>
+                </div>
+                <!-- Add more destinations as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <center><button type="submit">Submit</button></center>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Destinations. All rights reserved.</p>
+    </footer>
+
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Location Name</h2>
+            <p id="modal-info">Location info goes here.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
